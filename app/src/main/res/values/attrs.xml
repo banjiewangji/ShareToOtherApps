@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParallaxScrollView">
+        <attr name="backgroundView" format="reference" />
+        <attr name="scrollFactor" format="float" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="stroke_width" format="dimension" />
+    </declare-styleable>
+</resources>

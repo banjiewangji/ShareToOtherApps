@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cm.cm.mytest04.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    app:backgroundView="@+id/imageView"
+    app:scrollFactor="0.6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Background view -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:ignore="contentDescription"/>
+
+        <!-- Content view -->
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:background="@android:color/darker_gray">
+
+            <!-- button -->
+            <LinearLayout
+                android:id="@+id/btn_set_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#44000000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="设置为锁屏"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#aa000000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="设置为锁屏、桌面"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- line -->
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/btn_set_screen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#aa000000" />
+
+            <!-- user_info -->
+            <LinearLayout
+                android:id="@+id/user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/user_portrait"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#ffff0000" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="CM Locker"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</cm.cm.mytest04.ParallaxScrollView>
