@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         wallpapers.add(new Wallpaper(2, R.drawable.wallpaper_2, R.drawable.portrait_2, "这是2"));
         wallpapers.add(new Wallpaper(3, R.drawable.wallpaper_3, R.drawable.portrait_3, "这是3"));
         wallpapers.add(new Wallpaper(4, R.drawable.wallpaper_4, R.drawable.portrait_4, "这是4"));
+
         return wallpapers;
     }
 
